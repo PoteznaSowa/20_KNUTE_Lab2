@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Console;
 
-class Book {
+public class Book {
 	public Title title;
 	public Author author;
 	public Content content;
@@ -12,7 +12,7 @@ class Book {
 		this.content = new Content(content);
 	}
 }
-class Title {
+public class Title {
 	readonly string value;
 
 	public Title(string value) {
@@ -28,7 +28,7 @@ class Title {
 		ResetColor();
 	}
 }
-class Author {
+public class Author {
 	readonly string value;
 	public Author(string value) {
 		this.value = value;
@@ -41,7 +41,7 @@ class Author {
 		ResetColor();
 	}
 }
-class Content {
+public class Content {
 	readonly string value;
 	public Content(string value) {
 		this.value = value;
