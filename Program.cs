@@ -31,7 +31,7 @@ partial class Program {
 		} while (!uint.TryParse(ReadLine(), out input));
 		return input;
 	}
-	enum Task {
+	enum Task { // Внутрішні назви задач.
 		Address = 1,
 		Rectangle = 2,
 		Book = 3,
