@@ -71,6 +71,7 @@ partial class Program {
 		Figure ABC = new Figure(A, B, C);
 		WriteLine("Дано трикутник ABC.");
 		ABC.ShowNamePerimeter();
+
 		WriteLine();
 	}
 }

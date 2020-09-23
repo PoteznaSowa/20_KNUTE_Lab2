@@ -21,7 +21,21 @@ public class Invoice {
 	public void ShowValue(uint price) {
 		double value = (double)price * Quantity;
 		Console.WriteLine("Вартість товару {0} у кількості {1}:", Article, Quantity);
-		Console.WriteLine("з ПДВ: {0:F2}", value * 1.2);	// ПДВ: 20%
+		Console.WriteLine("з ПДВ: {0:F2}", value * 1.2);    // ПДВ: 20%
 		Console.WriteLine("без ПДВ: {0:F2}", value / 1.2);
+	}
+}
+
+partial class Program {
+	static void Task8() {
+		Console.WriteLine("8.");
+
+		Invoice invoice = new Invoice(0, "Давид Сімпкінс", "Київхліб") {
+			Article = "Хліб український",
+			Quantity = 5
+		};
+		invoice.ShowValue(11);
+
+		Console.WriteLine();
 	}
 }

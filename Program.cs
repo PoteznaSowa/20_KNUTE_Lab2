@@ -2,10 +2,6 @@
 using static System.Console;
 
 partial class Program {
-	static void Task8() {
-
-	}
-
 	static string GetString(string prompt) {
 		Write(prompt);
 		return ReadLine();
@@ -47,7 +43,7 @@ partial class Program {
 		Console.Title = "Лабораторна робота 2";
 
 		int TaskNum = 0;
-		if (args.Length != 0) {
+		if (args != null && args.Length != 0) {
 			int.TryParse(args[0], out TaskNum);
 		}
 		switch ((Task)TaskNum) {
@@ -88,7 +84,10 @@ partial class Program {
 		}
 
 		WriteLine("Роботу програми завершено. Натисніть Enter...");
-		while (ReadKey().Key != ConsoleKey.Enter) {
+		if (KeyAvailable) {
+			ReadKey(); // Очистити вхідний буфер.
+		}
+		while (ReadKey().Key != ConsoleKey.Enter) { // Чекати натискання літери Enter.
 		}
 	}
 }

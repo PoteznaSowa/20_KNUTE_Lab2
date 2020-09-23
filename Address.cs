@@ -59,5 +59,7 @@ partial class Program {
 		// Выведите на экран значения полей, описывающих адрес.
 		WriteLine("Тепер екземпляр класу Address має такі дані:");
 		address.Show();
+
+		WriteLine();
 	}
 }

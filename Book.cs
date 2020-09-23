@@ -66,6 +66,7 @@ partial class Program {
 		book.title.Show();
 		book.author.Show();
 		book.content.Show();
+
 		WriteLine();
 	}
 }

@@ -14,12 +14,13 @@ public class User {
 	public uint Age {
 		get; set;
 	}
+
 	public DateTime Date {
 		get;
 	}
 
 	public User() {
-		Date = DateTime.Now;
+		Date = DateTime.Now; // Дата анкети — поточний системний час.
 	}
 
 	public void ShowInfo() {

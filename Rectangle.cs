@@ -45,6 +45,7 @@ partial class Program {
 		Rectangle rectangle = new Rectangle(a, b);
 		WriteLine("Периметр цього прямокутника: " + rectangle.Perimeter);
 		WriteLine("Площа цього прямокутника: " + rectangle.Area);
+
 		WriteLine();
 	}
 }
