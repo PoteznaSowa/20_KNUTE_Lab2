@@ -28,24 +28,3 @@ public class Rectangle {
 		get;
 	}
 }
-
-partial class Program {
-	static void Task2() {
-		WriteLine("2.");
-
-		// Написать программу, которая принимает от пользователя длины двух
-		// сторон прямоугольника и выводит на экран периметр и площадь.
-		double a, b;
-		do {
-			a = GetDoubleFloat("Введіть довжину сторони a прямокутника: ");
-		} while (a <= 0);
-		do {
-			b = GetDoubleFloat("Введіть довжину сторони b прямокутника: ");
-		} while (b <= 0);
-		Rectangle rectangle = new Rectangle(a, b);
-		WriteLine("Периметр цього прямокутника: " + rectangle.Perimeter);
-		WriteLine("Площа цього прямокутника: " + rectangle.Area);
-
-		WriteLine();
-	}
-}

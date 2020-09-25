@@ -25,17 +25,3 @@ public class Invoice {
 		Console.WriteLine("без ПДВ: {0:F2}", value / 1.2);
 	}
 }
-
-partial class Program {
-	static void Task8() {
-		Console.WriteLine("8.");
-
-		Invoice invoice = new Invoice(0, "Давид Сімпкінс", "Київхліб") {
-			Article = "Хліб український",
-			Quantity = 5
-		};
-		invoice.ShowValue(11);
-
-		Console.WriteLine();
-	}
-}

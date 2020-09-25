@@ -31,19 +31,3 @@ public class User {
 		WriteLine("User Entry Date: " + Date.ToString("g"));
 	}
 }
-
-partial class Program {
-	static void Task5() {
-		WriteLine("5.");
-
-		User user = new User() {
-			Login = "u1",
-			Name = "Dave",
-			LastName = "Simpkins",
-			Age = 20,
-		};
-		user.ShowInfo();
-
-		WriteLine();
-	}
-}

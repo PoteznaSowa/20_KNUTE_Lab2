@@ -59,19 +59,3 @@ public class Figure {
 		WriteLine("Периметр: " + perimeter);
 	}
 }
-
-partial class Program {
-	static void Task4() {
-		WriteLine("4.");
-
-		WriteLine("Дано точки A(0,9), B(4,-2), C(-3, -5).");
-		Point A = new Point(0, 9, "A");
-		Point B = new Point(4, -2, "B");
-		Point C = new Point(-3, -5, "C");
-		Figure ABC = new Figure(A, B, C);
-		WriteLine("Дано трикутник ABC.");
-		ABC.ShowNamePerimeter();
-
-		WriteLine();
-	}
-}

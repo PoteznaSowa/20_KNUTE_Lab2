@@ -54,19 +54,3 @@ public class Content {
 		ResetColor();
 	}
 }
-
-partial class Program {
-	static void Task3() {
-		WriteLine("3.");
-
-		string title = GetString("Введіть назву книги: ");
-		string author = GetString("Вкажіть автора книги: ");
-		string content = GetString("Введіть зміст книги: ");
-		Book book = new Book(title, author, content);
-		book.title.Show();
-		book.author.Show();
-		book.content.Show();
-
-		WriteLine();
-	}
-}
