@@ -1,9 +1,9 @@
 ﻿using static System.Console;
 
 public class Address {
-	// Создать класс с именем Address.
-	// В теле класса требуется создать поля: index, country, city, street, house, apartment.
-	// Для каждого поля создать свойство с двумя методами доступа.
+	// Create an Address class.
+	// Define those fields in the class: index, country, city, street, house, apartment.
+	// Create a property with get and set accessors for each field.
 	public uint Index {
 		get; set;
 	}
