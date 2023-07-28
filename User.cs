@@ -20,7 +20,7 @@ public class User {
 	}
 
 	public User() {
-		Date = DateTime.Now; // Дата анкети — поточний системний час.
+		Date = DateTime.Now; // Set the date to a system one.
 	}
 
 	public void ShowInfo() {
