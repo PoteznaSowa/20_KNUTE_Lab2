@@ -25,7 +25,7 @@ public class Employee {
 	}
 
 	uint Salary(out uint Tax) {
-		uint salary = CurrentPos switch    // Заробітня плата за посадою, у ₴.
+		uint salary = CurrentPos switch    // Salary by position in ₴.
 		{
 			Position.JuniorProg => 15000,
 			Position.MidProg => 20000,
@@ -36,7 +36,7 @@ public class Employee {
 			Position.CEO => 100000,
 			_ => 0,
 		};
-		Tax = salary / 10;  // Нехай податки будуть 10%.
+		Tax = salary / 10;  // Assume taxes to equal 10%.
 		return salary;
 	}
 
