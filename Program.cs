@@ -27,7 +27,7 @@ static class Program {
 		} while (!uint.TryParse(ReadLine(), out input));
 		return input;
 	}
-	enum Task { // Внутрішні назви задач.
+	enum Task { // Internal task names.
 		Address = 1,
 		Rectangle = 2,
 		Book = 3,
@@ -85,17 +85,17 @@ static class Program {
 
 		WriteLine("Роботу програми завершено. Натисніть Enter...");
 		if (KeyAvailable) {
-			ReadKey(); // Очистити вхідний буфер.
+			ReadKey(); // Clear input buffer.
 		}
-		while (ReadKey().Key != ConsoleKey.Enter) { // Чекати натискання літери Enter.
+		while (ReadKey().Key != ConsoleKey.Enter) { // Wait until Enter is pressed.
 		}
 	}
 
 	static void Task1() {
 		WriteLine("1.");
 
-		// Создать экземпляр класса Address.
-		// В поля экземпляра записать информацию о почтовом адресе.
+		// Create an instance of Address.
+		// Fill its fields with info.
 		Address address = new Address {
 			Index = GetUInt32("Введіть невід'ємне число index: "),
 			Country = GetString("Введіть country: "),
@@ -113,7 +113,7 @@ static class Program {
 		} while (flat == 0);
 		address.Flat = flat;
 
-		// Выведите на экран значения полей, описывающих адрес.
+		// Print address info.
 		WriteLine("Тепер екземпляр класу Address має такі дані:");
 		address.Show();
 
@@ -123,8 +123,8 @@ static class Program {
 	static void Task2() {
 		WriteLine("2.");
 
-		// Написать программу, которая принимает от пользователя длины двух
-		// сторон прямоугольника и выводит на экран периметр и площадь.
+		// Write a program which takes the width and height of a rectangle
+		// from user input and print perimeter and area.
 		double a, b;
 		do {
 			a = GetDoubleFloat("Введіть довжину сторони a прямокутника: ");
@@ -190,7 +190,7 @@ static class Program {
 
 		Converter converter = new Converter(UAH_USD, UAH_EUR, UAH_RUB);
 
-		double money = 5000;    // Припустимо, у нас є 5000₴.
+		double money = 5000;    // Assume we have 5000₴.
 		Console.WriteLine("{0}₴ у різних валютах буде:", money);
 		Console.WriteLine("{0:F2}$, {1:F2}€, {2:F2}₽", converter.UahToUsd(money), converter.UahToEur(money), converter.UahToRub(money));
 
@@ -211,11 +211,11 @@ static class Program {
 		string lastname = Console.ReadLine();
 		Employee employee = new Employee(name, lastname);
 
-		// Надати працівнику випадкову посаду.
+		// Assign the employee to a random position.
 		Random random = new Random();
 		employee.CurrentPos = (Employee.Position)random.Next(4);
 
-		// Вивести на екран інформацію про працівника.
+		// Print employee info.
 		employee.ShowInfo();
 		Console.WriteLine();
 	}
