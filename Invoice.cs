@@ -21,7 +21,7 @@ public class Invoice {
 	public void ShowValue(uint price) {
 		double value = (double)price * Quantity;
 		Console.WriteLine("Вартість товару {0} у кількості {1}:", Article, Quantity);
-		Console.WriteLine("з ПДВ: {0:F2}", value * 1.2);    // ПДВ: 20%
+		Console.WriteLine("з ПДВ: {0:F2}", value * 1.2);    // Taxes equal 20%
 		Console.WriteLine("без ПДВ: {0:F2}", value / 1.2);
 	}
 }
