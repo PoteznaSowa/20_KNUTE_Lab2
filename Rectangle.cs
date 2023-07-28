@@ -1,13 +1,13 @@
 ﻿using static System.Console;
 
 public class Rectangle {
-	// Создать класс с именем Rectangle.
+	// Create a Rectangle class.
 
-	// В теле класса создать два поля, описывающие длины сторон double side1, side2.
+	// Create two fields which define dimensions: double side1, side2.
 	readonly double side1, side2;
 
-	// Создать пользовательский конструктор Rectangle(double side1, double side2),
-	// в теле которого поля side1 и side2 инициализируются значениями аргументов.
+	// Create a custom Rectangle(double side1, double side2) constructor which
+	// initialises side1 and side2 fields using arguments.
 	public Rectangle(double side1, double side2) {
 		this.side1 = side1;
 		this.side2 = side2;
@@ -15,12 +15,12 @@ public class Rectangle {
 		Perimeter = PerimeterCalculator();
 	}
 
-	// Создать два метода, вычисляющие площадь прямоугольника — double AreaCalculator()
-	// и периметр прямоугольника — double PerimeterCalculator().
+	// Create two methods which calculate the rectangle's area and perimeter:
+	// double AreaCalculator(), double PerimeterCalculator()
 	double AreaCalculator() => side1 * side2;
 	double PerimeterCalculator() => 2 * (side1 + side2);
 
-	// Создать два свойства double Area и double Perimeter с одним методом доступа get.
+	// Create two properties, double Area and double Perimeter, with a get accessor.
 	public double Area {
 		get;
 	}
